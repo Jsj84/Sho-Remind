@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		773576121E0F02E70061707E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576111E0F02E60061707E /* AppDelegate.swift */; };
+		773576141E0F02E70061707E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576131E0F02E70061707E /* ViewController.swift */; };
+		773576171E0F02E70061707E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773576151E0F02E70061707E /* Main.storyboard */; };
+		773576191E0F02E70061707E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773576181E0F02E70061707E /* Assets.xcassets */; };
+		7735761C1E0F02E70061707E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7735761A1E0F02E70061707E /* LaunchScreen.storyboard */; };
+		773576271E0F02E70061707E /* Sho_RemindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576261E0F02E70061707E /* Sho_RemindTests.swift */; };
+		773576321E0F02E70061707E /* Sho_RemindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576311E0F02E70061707E /* Sho_RemindUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		773576231E0F02E70061707E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 773576061E0F02E60061707E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7735760D1E0F02E60061707E;
+			remoteInfo = "Sho Remind";
+		};
+		7735762E1E0F02E70061707E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 773576061E0F02E60061707E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7735760D1E0F02E60061707E;
+			remoteInfo = "Sho Remind";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7735760E1E0F02E60061707E /* Sho Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sho Remind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		773576111E0F02E60061707E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		773576131E0F02E70061707E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773576161E0F02E70061707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		773576181E0F02E70061707E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7735761B1E0F02E70061707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7735761D1E0F02E70061707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773576221E0F02E70061707E /* Sho RemindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sho RemindTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		773576261E0F02E70061707E /* Sho_RemindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sho_RemindTests.swift; sourceTree = "<group>"; };
+		773576281E0F02E70061707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7735762D1E0F02E70061707E /* Sho RemindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sho RemindUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		773576311E0F02E70061707E /* Sho_RemindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sho_RemindUITests.swift; sourceTree = "<group>"; };
+		773576331E0F02E70061707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7735760B1E0F02E60061707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7735761F1E0F02E70061707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7735762A1E0F02E70061707E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		773576051E0F02E60061707E = {
+			isa = PBXGroup;
+			children = (
+				773576101E0F02E60061707E /* Sho Remind */,
+				773576251E0F02E70061707E /* Sho RemindTests */,
+				773576301E0F02E70061707E /* Sho RemindUITests */,
+				7735760F1E0F02E60061707E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7735760F1E0F02E60061707E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7735760E1E0F02E60061707E /* Sho Remind.app */,
+				773576221E0F02E70061707E /* Sho RemindTests.xctest */,
+				7735762D1E0F02E70061707E /* Sho RemindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		773576101E0F02E60061707E /* Sho Remind */ = {
+			isa = PBXGroup;
+			children = (
+				773576111E0F02E60061707E /* AppDelegate.swift */,
+				773576131E0F02E70061707E /* ViewController.swift */,
+				773576151E0F02E70061707E /* Main.storyboard */,
+				773576181E0F02E70061707E /* Assets.xcassets */,
+				7735761A1E0F02E70061707E /* LaunchScreen.storyboard */,
+				7735761D1E0F02E70061707E /* Info.plist */,
+			);
+			path = "Sho Remind";
+			sourceTree = "<group>";
+		};
+		773576251E0F02E70061707E /* Sho RemindTests */ = {
+			isa = PBXGroup;
+			children = (
+				773576261E0F02E70061707E /* Sho_RemindTests.swift */,
+				773576281E0F02E70061707E /* Info.plist */,
+			);
+			path = "Sho RemindTests";
+			sourceTree = "<group>";
+		};
+		773576301E0F02E70061707E /* Sho RemindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				773576311E0F02E70061707E /* Sho_RemindUITests.swift */,
+				773576331E0F02E70061707E /* Info.plist */,
+			);
+			path = "Sho RemindUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7735760D1E0F02E60061707E /* Sho Remind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773576361E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho Remind" */;
+			buildPhases = (
+				7735760A1E0F02E60061707E /* Sources */,
+				7735760B1E0F02E60061707E /* Frameworks */,
+				7735760C1E0F02E60061707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sho Remind";
+			productName = "Sho Remind";
+			productReference = 7735760E1E0F02E60061707E /* Sho Remind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		773576211E0F02E70061707E /* Sho RemindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773576391E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindTests" */;
+			buildPhases = (
+				7735761E1E0F02E70061707E /* Sources */,
+				7735761F1E0F02E70061707E /* Frameworks */,
+				773576201E0F02E70061707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				773576241E0F02E70061707E /* PBXTargetDependency */,
+			);
+			name = "Sho RemindTests";
+			productName = "Sho RemindTests";
+			productReference = 773576221E0F02E70061707E /* Sho RemindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7735762C1E0F02E70061707E /* Sho RemindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7735763C1E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindUITests" */;
+			buildPhases = (
+				773576291E0F02E70061707E /* Sources */,
+				7735762A1E0F02E70061707E /* Frameworks */,
+				7735762B1E0F02E70061707E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7735762F1E0F02E70061707E /* PBXTargetDependency */,
+			);
+			name = "Sho RemindUITests";
+			productName = "Sho RemindUITests";
+			productReference = 7735762D1E0F02E70061707E /* Sho RemindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		773576061E0F02E60061707E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "JNJ Apps";
+				TargetAttributes = {
+					7735760D1E0F02E60061707E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JN83A35T6F;
+						ProvisioningStyle = Automatic;
+					};
+					773576211E0F02E70061707E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JN83A35T6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7735760D1E0F02E60061707E;
+					};
+					7735762C1E0F02E70061707E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JN83A35T6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7735760D1E0F02E60061707E;
+					};
+				};
+			};
+			buildConfigurationList = 773576091E0F02E60061707E /* Build configuration list for PBXProject "Sho Remind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 773576051E0F02E60061707E;
+			productRefGroup = 7735760F1E0F02E60061707E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7735760D1E0F02E60061707E /* Sho Remind */,
+				773576211E0F02E70061707E /* Sho RemindTests */,
+				7735762C1E0F02E70061707E /* Sho RemindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7735760C1E0F02E60061707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7735761C1E0F02E70061707E /* LaunchScreen.storyboard in Resources */,
+				773576191E0F02E70061707E /* Assets.xcassets in Resources */,
+				773576171E0F02E70061707E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773576201E0F02E70061707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7735762B1E0F02E70061707E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7735760A1E0F02E60061707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773576141E0F02E70061707E /* ViewController.swift in Sources */,
+				773576121E0F02E70061707E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7735761E1E0F02E70061707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773576271E0F02E70061707E /* Sho_RemindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773576291E0F02E70061707E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773576321E0F02E70061707E /* Sho_RemindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		773576241E0F02E70061707E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7735760D1E0F02E60061707E /* Sho Remind */;
+			targetProxy = 773576231E0F02E70061707E /* PBXContainerItemProxy */;
+		};
+		7735762F1E0F02E70061707E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7735760D1E0F02E60061707E /* Sho Remind */;
+			targetProxy = 7735762E1E0F02E70061707E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		773576151E0F02E70061707E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773576161E0F02E70061707E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7735761A1E0F02E70061707E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7735761B1E0F02E70061707E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		773576341E0F02E70061707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		773576351E0F02E70061707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		773576371E0F02E70061707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho Remind/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-Remind";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		773576381E0F02E70061707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho Remind/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-Remind";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7735763A1E0F02E70061707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho RemindTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-RemindTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sho Remind.app/Sho Remind";
+			};
+			name = Debug;
+		};
+		7735763B1E0F02E70061707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho RemindTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-RemindTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sho Remind.app/Sho Remind";
+			};
+			name = Release;
+		};
+		7735763D1E0F02E70061707E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho RemindUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-RemindUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Sho Remind";
+			};
+			name = Debug;
+		};
+		7735763E1E0F02E70061707E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JN83A35T6F;
+				INFOPLIST_FILE = "Sho RemindUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnjapps.Sho-RemindUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Sho Remind";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		773576091E0F02E60061707E /* Build configuration list for PBXProject "Sho Remind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773576341E0F02E70061707E /* Debug */,
+				773576351E0F02E70061707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773576361E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho Remind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773576371E0F02E70061707E /* Debug */,
+				773576381E0F02E70061707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		773576391E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7735763A1E0F02E70061707E /* Debug */,
+				7735763B1E0F02E70061707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7735763C1E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7735763D1E0F02E70061707E /* Debug */,
+				7735763E1E0F02E70061707E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 773576061E0F02E60061707E /* Project object */;
+}
