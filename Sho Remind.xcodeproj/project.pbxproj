@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		773576121E0F02E70061707E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576111E0F02E60061707E /* AppDelegate.swift */; };
-		773576141E0F02E70061707E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576131E0F02E70061707E /* ViewController.swift */; };
+		773576141E0F02E70061707E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576131E0F02E70061707E /* HomeViewController.swift */; };
 		773576171E0F02E70061707E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773576151E0F02E70061707E /* Main.storyboard */; };
 		773576191E0F02E70061707E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773576181E0F02E70061707E /* Assets.xcassets */; };
 		7735761C1E0F02E70061707E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7735761A1E0F02E70061707E /* LaunchScreen.storyboard */; };
 		773576271E0F02E70061707E /* Sho_RemindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576261E0F02E70061707E /* Sho_RemindTests.swift */; };
 		773576321E0F02E70061707E /* Sho_RemindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576311E0F02E70061707E /* Sho_RemindUITests.swift */; };
+		773576421E1049800061707E /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576411E1049800061707E /* TimeViewController.swift */; };
+		773576441E1049CC0061707E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576431E1049CC0061707E /* PlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		7735760E1E0F02E60061707E /* Sho Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sho Remind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773576111E0F02E60061707E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		773576131E0F02E70061707E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773576131E0F02E70061707E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		773576161E0F02E70061707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		773576181E0F02E70061707E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7735761B1E0F02E70061707E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		7735762D1E0F02E70061707E /* Sho RemindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sho RemindUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773576311E0F02E70061707E /* Sho_RemindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sho_RemindUITests.swift; sourceTree = "<group>"; };
 		773576331E0F02E70061707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773576411E1049800061707E /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		773576431E1049CC0061707E /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		773576101E0F02E60061707E /* Sho Remind */ = {
 			isa = PBXGroup;
 			children = (
+				773576451E11643A0061707E /* Home */,
 				773576111E0F02E60061707E /* AppDelegate.swift */,
-				773576131E0F02E70061707E /* ViewController.swift */,
+				773576411E1049800061707E /* TimeViewController.swift */,
+				773576431E1049CC0061707E /* PlaceViewController.swift */,
 				773576151E0F02E70061707E /* Main.storyboard */,
 				773576181E0F02E70061707E /* Assets.xcassets */,
 				7735761A1E0F02E70061707E /* LaunchScreen.storyboard */,
@@ -123,6 +129,14 @@
 				773576331E0F02E70061707E /* Info.plist */,
 			);
 			path = "Sho RemindUITests";
+			sourceTree = "<group>";
+		};
+		773576451E11643A0061707E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				773576131E0F02E70061707E /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773576141E0F02E70061707E /* ViewController.swift in Sources */,
+				773576441E1049CC0061707E /* PlaceViewController.swift in Sources */,
+				773576141E0F02E70061707E /* HomeViewController.swift in Sources */,
+				773576421E1049800061707E /* TimeViewController.swift in Sources */,
 				773576121E0F02E70061707E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +528,7 @@
 				773576381E0F02E70061707E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		773576391E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +537,7 @@
 				7735763B1E0F02E70061707E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7735763C1E0F02E70061707E /* Build configuration list for PBXNativeTarget "Sho RemindUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +546,7 @@
 				7735763E1E0F02E70061707E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
