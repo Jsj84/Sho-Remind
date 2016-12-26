@@ -18,22 +18,33 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
     @IBOutlet weak var tableView: UITableView!
     
     var textEntered:[String] = []
-    var userdefaults = UserDefaults.standard
     var timeAsString:[String] = []
+    
+    var textData = [String]()
+    var timeData = [String]()
+    
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         reminderDiscription.delegate = self
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.clear
         tableView.isOpaque = true
         tableView.allowsSelection = false
-        
         reminderDiscription.returnKeyType = UIReturnKeyType.done
- 
+        self.hideKeyboardWhenTappedAround()
+        
+        if textData.isEmpty == true && timeData.isEmpty == true {
+            textEntered = defaults.object(forKey: "textData") as? [String] ?? [String]()
+            timeAsString = defaults.object(forKey: "timeData") as? [String] ?? [String]()
+        }
+        else {}
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if reminderDiscription.text?.isEmpty == true {
@@ -44,6 +55,7 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         else {
             self.view.endEditing(true)
             textEntered.append(reminderDiscription.text!)
+            textData.append(reminderDiscription.text!)
             reminderDiscription.text?.removeAll()
             
             let dateOnPicker = timePicker.date //capture the date shown on the picker
@@ -52,9 +64,14 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
             dateFormatter.dateStyle = DateFormatter.Style.short
             dateFormatter.timeStyle = DateFormatter.Style.short
             let timeString = dateFormatter.string(from: dateOnPicker)
-            timeAsString.append(timeString) //ex. prints 3:04 AM as "3:04 AM" and 11:37 PM as "11:37 PM"
             
+            timeAsString.append(timeString) //ex. prints 3:04 AM as "3:04 AM" and 11:37 PM as "11:37 PM"
+            timeData.append(timeString)
+            defaults.set(textData, forKey: "textData")
+            defaults.set(timeData, forKey: "timeData")
+            defaults.synchronize()
             tableView.reloadData()
+            print("\(textData)" + "(\(timeData))")
         }
         return false
     }
@@ -79,8 +96,17 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
             textEntered.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+            
         }
     }
-
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

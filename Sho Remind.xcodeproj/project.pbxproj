@@ -103,14 +103,14 @@
 		773576101E0F02E60061707E /* Sho Remind */ = {
 			isa = PBXGroup;
 			children = (
+				77BA094C1E11C67700951F5E /* Places */,
 				77BA09491E11B57900951F5E /* Time */,
 				773576451E11643A0061707E /* Home */,
-				773576111E0F02E60061707E /* AppDelegate.swift */,
-				773576431E1049CC0061707E /* PlaceViewController.swift */,
 				773576151E0F02E70061707E /* Main.storyboard */,
-				773576181E0F02E70061707E /* Assets.xcassets */,
 				7735761A1E0F02E70061707E /* LaunchScreen.storyboard */,
+				773576111E0F02E60061707E /* AppDelegate.swift */,
 				7735761D1E0F02E70061707E /* Info.plist */,
+				773576181E0F02E70061707E /* Assets.xcassets */,
 			);
 			path = "Sho Remind";
 			sourceTree = "<group>";
@@ -148,6 +148,14 @@
 				77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */,
 			);
 			name = Time;
+			sourceTree = "<group>";
+		};
+		77BA094C1E11C67700951F5E /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				773576431E1049CC0061707E /* PlaceViewController.swift */,
+			);
+			name = Places;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
