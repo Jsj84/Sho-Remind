@@ -62,10 +62,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lG9-BH-R7Y">
-                                        <rect key="frame" x="0.0" y="55.5" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lG9-BH-R7Y" id="DmG-es-w4Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -119,7 +119,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmz-KP-ma1">
                                 <rect key="frame" x="16" y="72" width="116" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="116" id="i4b-Mb-AYl"/>
+                                    <constraint firstAttribute="width" constant="116" id="e3Z-Vc-oj7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -137,49 +137,42 @@
                                     <!--2016-12-25 18:43:58 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be reminded to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv0-KH-wac">
-                                <rect key="frame" x="16" y="334" width="343" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="okP-wM-PEv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="1" green="0.24865456829999999" blue="0.33384450370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38x-6b-Tsz">
-                                <rect key="frame" x="16" y="373" width="343" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="1Gi-Le-JAR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XWh-OA-spb">
+                                <rect key="frame" x="16" y="334" width="343" height="333"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="W8m-bu-7uh">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W8m-bu-7uh" id="Eqo-X2-Taj">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fYN-gP-iOH" firstAttribute="centerX" secondItem="iv0-KH-wac" secondAttribute="centerX" id="0Fk-vB-SfO"/>
-                            <constraint firstItem="5GN-Nh-b6t" firstAttribute="leading" secondItem="mmz-KP-ma1" secondAttribute="trailing" constant="7" id="4od-c7-v8B"/>
-                            <constraint firstItem="mmz-KP-ma1" firstAttribute="top" secondItem="5GN-Nh-b6t" secondAttribute="top" id="55m-h8-78I"/>
-                            <constraint firstItem="mmz-KP-ma1" firstAttribute="top" secondItem="ftz-wD-TIj" secondAttribute="bottom" constant="8" symbolic="YES" id="AaF-7V-cUS"/>
-                            <constraint firstItem="fYN-gP-iOH" firstAttribute="top" secondItem="5GN-Nh-b6t" secondAttribute="bottom" constant="8" symbolic="YES" id="Ejd-qu-grM"/>
-                            <constraint firstItem="iv0-KH-wac" firstAttribute="top" secondItem="fYN-gP-iOH" secondAttribute="bottom" constant="8" symbolic="YES" id="JOC-GK-VRi"/>
-                            <constraint firstItem="mmz-KP-ma1" firstAttribute="leading" secondItem="iv0-KH-wac" secondAttribute="leading" id="Jl3-g7-2n0"/>
-                            <constraint firstItem="5GN-Nh-b6t" firstAttribute="trailing" secondItem="iv0-KH-wac" secondAttribute="trailing" id="Xap-qV-j2l"/>
-                            <constraint firstItem="38x-6b-Tsz" firstAttribute="top" secondItem="iv0-KH-wac" secondAttribute="bottom" constant="8" symbolic="YES" id="a7e-hv-Asv"/>
-                            <constraint firstItem="fYN-gP-iOH" firstAttribute="top" secondItem="mmz-KP-ma1" secondAttribute="bottom" constant="8" symbolic="YES" id="cXs-63-S7c"/>
-                            <constraint firstItem="iv0-KH-wac" firstAttribute="trailing" secondItem="38x-6b-Tsz" secondAttribute="trailing" id="fXI-ru-egJ"/>
-                            <constraint firstItem="fYN-gP-iOH" firstAttribute="leading" secondItem="wws-jU-eNd" secondAttribute="leading" id="piv-Gd-fff"/>
-                            <constraint firstItem="mmz-KP-ma1" firstAttribute="leading" secondItem="wws-jU-eNd" secondAttribute="leadingMargin" id="s3B-ik-Z5h"/>
-                            <constraint firstAttribute="trailing" secondItem="fYN-gP-iOH" secondAttribute="trailing" id="zTw-zS-O1d"/>
-                            <constraint firstItem="iv0-KH-wac" firstAttribute="leading" secondItem="38x-6b-Tsz" secondAttribute="leading" id="zpg-st-yhv"/>
+                            <constraint firstItem="fYN-gP-iOH" firstAttribute="leading" secondItem="wws-jU-eNd" secondAttribute="leading" id="3jd-Yc-2af"/>
+                            <constraint firstItem="5GN-Nh-b6t" firstAttribute="leading" secondItem="mmz-KP-ma1" secondAttribute="trailing" constant="7" id="44f-em-toY"/>
+                            <constraint firstItem="mmz-KP-ma1" firstAttribute="top" secondItem="ftz-wD-TIj" secondAttribute="bottom" constant="8" symbolic="YES" id="8sT-a8-zq4"/>
+                            <constraint firstItem="fYN-gP-iOH" firstAttribute="top" secondItem="5GN-Nh-b6t" secondAttribute="bottom" constant="8" symbolic="YES" id="NNq-sR-DUb"/>
+                            <constraint firstItem="XWh-OA-spb" firstAttribute="top" secondItem="fYN-gP-iOH" secondAttribute="bottom" constant="8" symbolic="YES" id="O2i-aJ-KCH"/>
+                            <constraint firstItem="fYN-gP-iOH" firstAttribute="centerX" secondItem="XWh-OA-spb" secondAttribute="centerX" id="W6A-BI-F3g"/>
+                            <constraint firstItem="5GN-Nh-b6t" firstAttribute="trailing" secondItem="XWh-OA-spb" secondAttribute="trailing" id="c47-xw-A3h"/>
+                            <constraint firstItem="mmz-KP-ma1" firstAttribute="leading" secondItem="wws-jU-eNd" secondAttribute="leadingMargin" id="d7z-r9-7yA"/>
+                            <constraint firstItem="fYN-gP-iOH" firstAttribute="top" secondItem="mmz-KP-ma1" secondAttribute="bottom" constant="8" symbolic="YES" id="dDI-0p-S5d"/>
+                            <constraint firstItem="mmz-KP-ma1" firstAttribute="top" secondItem="5GN-Nh-b6t" secondAttribute="top" id="dNk-6y-1SE"/>
+                            <constraint firstAttribute="trailing" secondItem="fYN-gP-iOH" secondAttribute="trailing" id="mja-fg-r8y"/>
+                            <constraint firstItem="mmz-KP-ma1" firstAttribute="leading" secondItem="XWh-OA-spb" secondAttribute="leading" id="sTb-ZR-3T7"/>
+                            <constraint firstItem="XWh-OA-spb" firstAttribute="bottom" secondItem="YxM-Ox-L6D" secondAttribute="top" id="z8j-3l-Yc9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dynamicLable" destination="38x-6b-Tsz" id="RIB-g6-34p"/>
                         <outlet property="reminderDiscription" destination="5GN-Nh-b6t" id="Qgb-Oc-in2"/>
                         <outlet property="reminderName" destination="mmz-KP-ma1" id="etb-FI-ogq"/>
-                        <outlet property="staticLable" destination="iv0-KH-wac" id="w9i-Ow-eJw"/>
+                        <outlet property="tableView" destination="XWh-OA-spb" id="aR6-f4-Zzo"/>
                         <outlet property="timePicker" destination="fYN-gP-iOH" id="skl-Dv-JAi"/>
                     </connections>
                 </viewController>
