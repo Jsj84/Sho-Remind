@@ -16,6 +16,7 @@
 		773576321E0F02E70061707E /* Sho_RemindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576311E0F02E70061707E /* Sho_RemindUITests.swift */; };
 		773576421E1049800061707E /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576411E1049800061707E /* TimeViewController.swift */; };
 		773576441E1049CC0061707E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576431E1049CC0061707E /* PlaceViewController.swift */; };
+		77BA094B1E11B59A00951F5E /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		773576331E0F02E70061707E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773576411E1049800061707E /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		773576431E1049CC0061707E /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 		773576101E0F02E60061707E /* Sho Remind */ = {
 			isa = PBXGroup;
 			children = (
+				77BA09491E11B57900951F5E /* Time */,
 				773576451E11643A0061707E /* Home */,
 				773576111E0F02E60061707E /* AppDelegate.swift */,
-				773576411E1049800061707E /* TimeViewController.swift */,
 				773576431E1049CC0061707E /* PlaceViewController.swift */,
 				773576151E0F02E70061707E /* Main.storyboard */,
 				773576181E0F02E70061707E /* Assets.xcassets */,
@@ -137,6 +139,15 @@
 				773576131E0F02E70061707E /* HomeViewController.swift */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		77BA09491E11B57900951F5E /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				773576411E1049800061707E /* TimeViewController.swift */,
+				77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */,
+			);
+			name = Time;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				773576141E0F02E70061707E /* HomeViewController.swift in Sources */,
 				773576421E1049800061707E /* TimeViewController.swift in Sources */,
 				773576121E0F02E70061707E /* AppDelegate.swift in Sources */,
+				77BA094B1E11B59A00951F5E /* TimeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -17,7 +18,8 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
     @IBOutlet weak var tableView: UITableView!
     
     var textEntered:[String] = []
-    var tableViewTemps = ["2:00pm ", "4:00pm", "7:00pm"]
+    var userdefaults = UserDefaults.standard
+    var timeAsString:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,32 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.clear
         tableView.isOpaque = true
-
+        tableView.allowsSelection = false
+        
+        reminderDiscription.returnKeyType = UIReturnKeyType.done
  
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        textEntered = [reminderDiscription.text!]
-        tableView.reloadData()
+        if reminderDiscription.text?.isEmpty == true {
+            let alert = UIAlertController(title: "Alert", message: "You cannot save this reminder without a discription", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK, Got it!", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
+            self.view.endEditing(true)
+            textEntered.append(reminderDiscription.text!)
+            reminderDiscription.text?.removeAll()
+            
+            let dateOnPicker = timePicker.date //capture the date shown on the picker
+            let dateFormatter = DateFormatter() //create a date formatter
+            
+            dateFormatter.dateStyle = DateFormatter.Style.short
+            dateFormatter.timeStyle = DateFormatter.Style.short
+            let timeString = dateFormatter.string(from: dateOnPicker)
+            timeAsString.append(timeString) //ex. prints 3:04 AM as "3:04 AM" and 11:37 PM as "11:37 PM"
+            
+            tableView.reloadData()
+        }
         return false
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -47,11 +68,11 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         return textEntered.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        for i in 0..<textEntered.count {
-        cell?.textLabel?.text = textEntered[i]
-        }
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TimeTableViewCell
+        let row = indexPath.row
+        cell.myLabel_1.text = textEntered[row]
+        cell.myLabel_2.text = timeAsString[row]
+        return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

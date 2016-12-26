@@ -49,6 +49,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.clear
         tableView.backgroundView?.isOpaque = true
+        tableView.allowsSelection = false
         
         
     }
