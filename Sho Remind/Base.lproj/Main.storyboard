@@ -123,8 +123,8 @@
                         <outlet property="tableView" destination="P2r-G0-M4d" id="Jl9-yC-yJq"/>
                         <outlet property="time" destination="7uF-5Q-apT" id="BZJ-HS-421"/>
                         <outlet property="way" destination="KAj-do-EEW" id="4jq-HP-lMa"/>
-                        <segue destination="fj2-Me-P1i" kind="show" identifier="timeSegue" id="Yk7-2V-fCu"/>
-                        <segue destination="Wgi-C2-LqH" kind="show" identifier="placeSegue" id="6ek-fr-cih"/>
+                        <segue destination="fj2-Me-P1i" kind="show" identifier="timeSegue" animates="NO" id="Yk7-2V-fCu"/>
+                        <segue destination="Wgi-C2-LqH" kind="show" identifier="placeSegue" animates="NO" id="6ek-fr-cih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -28,10 +28,12 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timePicker.backgroundColor = UIColor.white
+        timePicker.backgroundColor = UIColor.black
         timePicker.layer.cornerRadius = 10
+        timePicker.setValue(UIColor.white, forKeyPath: "textColor")
         view.backgroundColor = UIColor.clear
-
+        
+        
         reminderDiscription.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
