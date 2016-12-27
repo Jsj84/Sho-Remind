@@ -22,17 +22,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func placeAction(_ sender: Any) {
         performSegue(withIdentifier: "placeSegue", sender: self)
     }
+    var tableVeiwItems:[String] = []
+    var sectionTwo:[String] = []
+    let cellSpacingHeight: CGFloat = 40
     
-    let tableVeiwItems = ["3:00pm", "2:00pm", "1:00pm"]
-    let sectionTwo = ["Home", "Work", "Mom & Dad's House"]
+    let tempString = ["10 Clinton St. Brooklyn, N.Y", "437 Madison Avenue, New Yory, N.Y", "Port Authority Bus Terminal"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.barTintColor = UIColor.green
+        self.navigationController?.navigationBar.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.clear
         
         way.font = UIFont (name: "HelveticaNeue-Bold", size: 19)!
-        way.textAlignment = .center
         
         place.layer.cornerRadius = 8
         place.backgroundColor = UIColor.green
@@ -51,6 +53,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.backgroundView?.isOpaque = true
         tableView.allowsSelection = false
         
+        let defaults = UserDefaults.standard
+        tableVeiwItems = defaults.object(forKey: "textData") as? [String] ?? [String]()
+        sectionTwo = defaults.object(forKey: "timeData") as? [String] ?? [String]()
+        tableView.reloadData()
         
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -61,35 +67,42 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             return "Next location reminder"
         }
     }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableVeiwItems.count
+        if section == 0 {
+            return tableVeiwItems.count
+        }
+        else {
+            return tempString.count
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell")
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeTableViewCell
             let row = indexPath.row
-            cell?.textLabel?.text = tableVeiwItems[row]
-            return cell!
+            cell.myLabel_1.text = tableVeiwItems[row]
+            cell.myLabel_2.text = sectionTwo[row]
+            cell.backgroundColor = UIColor.white
+            cell.layer.borderWidth = 8
+            cell.layer.cornerRadius = 15
+            cell.layer.borderColor = UIColor.black.cgColor
+            return cell
         }
         else {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell")
             let row = indexPath.row
-            cell?.textLabel?.text = tableVeiwItems[row]
+            cell?.textLabel?.text = tempString[row]
+            cell?.backgroundColor = UIColor.white
+            cell?.layer.borderWidth = 5
+            cell?.layer.cornerRadius = 15
+            cell?.layer.borderColor = UIColor.black.cgColor
             return cell!
         }
-        
     }
-    func timeAction(sender: UIButton!){
-        let btnsendtag: UIButton = sender
-        if btnsendtag.tag == 1 {
-            print("Button Pressed")
-        }
-        // performSegue(withIdentifier: "timeSegue", sender: self)
-    }
-    
-    
 }
 

@@ -28,6 +28,10 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        timePicker.backgroundColor = UIColor.white
+        timePicker.layer.cornerRadius = 10
+        view.backgroundColor = UIColor.clear
+
         reminderDiscription.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -36,15 +40,13 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         tableView.allowsSelection = false
         reminderDiscription.returnKeyType = UIReturnKeyType.done
         self.hideKeyboardWhenTappedAround()
+        self.dismissKeyboard()
         
         if textData.isEmpty == true && timeData.isEmpty == true {
             textEntered = defaults.object(forKey: "textData") as? [String] ?? [String]()
             timeAsString = defaults.object(forKey: "timeData") as? [String] ?? [String]()
         }
         else {}
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if reminderDiscription.text?.isEmpty == true {
@@ -63,15 +65,14 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
             
             dateFormatter.dateStyle = DateFormatter.Style.short
             dateFormatter.timeStyle = DateFormatter.Style.short
+            
             let timeString = dateFormatter.string(from: dateOnPicker)
             
             timeAsString.append(timeString) //ex. prints 3:04 AM as "3:04 AM" and 11:37 PM as "11:37 PM"
             timeData.append(timeString)
             defaults.set(textData, forKey: "textData")
             defaults.set(timeData, forKey: "timeData")
-            defaults.synchronize()
             tableView.reloadData()
-            print("\(textData)" + "(\(timeData))")
         }
         return false
     }
@@ -89,6 +90,10 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UITableViewDele
         let row = indexPath.row
         cell.myLabel_1.text = textEntered[row]
         cell.myLabel_2.text = timeAsString[row]
+        cell.backgroundColor = UIColor.white
+        cell.layer.borderWidth = 5
+        cell.layer.cornerRadius = 15
+        cell.layer.borderColor = UIColor.black.cgColor
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

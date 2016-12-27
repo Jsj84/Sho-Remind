@@ -17,6 +17,7 @@
 		773576421E1049800061707E /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576411E1049800061707E /* TimeViewController.swift */; };
 		773576441E1049CC0061707E /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773576431E1049CC0061707E /* PlaceViewController.swift */; };
 		77BA094B1E11B59A00951F5E /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */; };
+		77BA09501E11E5E900951F5E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA094F1E11E5E900951F5E /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		773576411E1049800061707E /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		773576431E1049CC0061707E /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 		77BA094A1E11B59A00951F5E /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		77BA094F1E11E5E900951F5E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				773576131E0F02E70061707E /* HomeViewController.swift */,
+				77BA094F1E11E5E900951F5E /* HomeTableViewCell.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BA09501E11E5E900951F5E /* HomeTableViewCell.swift in Sources */,
 				773576441E1049CC0061707E /* PlaceViewController.swift in Sources */,
 				773576141E0F02E70061707E /* HomeViewController.swift in Sources */,
 				773576421E1049800061707E /* TimeViewController.swift in Sources */,
